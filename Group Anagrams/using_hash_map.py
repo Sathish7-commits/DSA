@@ -19,14 +19,14 @@ class Solution:
     """
 
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        result = defaultdict(list)
-
+        result = defaultdict(list) # This step is required otherwise you can't store the list as a key in dict (THIS 1)
+    
         for word in strs:
             counts = [0] * 26
 
             for letter in word:
                 counts[ord(letter) - ord("a")] += 1
             
-            result[tuple(counts)].append(word)
+            result[tuple(counts)].append(word) # (THIS 1) - Useful here, when list is converted to tuple and assigned a value against it
         
         return result.values()
