@@ -40,4 +40,6 @@ class Solution:
                 ord('a') <= ord(letter) <= ord('z') or 
                 ord('0') <= ord(letter) <= ord('9'))
 
-        
+
+s = Solution()
+print(s.isPalindrome("Was it a car or a cat I saw?"))
