@@ -49,7 +49,3 @@ sln = Solution()
 # output = sln.threeSum([0,0,0,0])
 output = sln.threeSum([3,0,-2,-1,1,2])
 print(output)
-
-
-
-
