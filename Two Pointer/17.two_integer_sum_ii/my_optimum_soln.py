@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         """
@@ -30,3 +32,8 @@ class Solution:
                 left+=1
             else:
                 right-=1
+
+
+sln = Solution()
+output = sln.twoSum(numbers=[1,2,3,4],target=3)
+print(output)
