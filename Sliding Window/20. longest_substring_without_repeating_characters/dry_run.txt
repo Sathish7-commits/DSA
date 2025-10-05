@@ -1,0 +1,33 @@
+        # zxyzxyz
+        right=0
+        seen={z}
+
+        right = 1
+        seen={z,x}
+
+        right = 2
+        seen = {z,x,y}
+
+        right = 3
+        seen = {z,x,y}
+        s[right] = 'z'
+        {x,y}
+        left = 1
+        {x, y, z}
+
+        # zxyzxyz
+        right = 4
+        seen = {x, y, z}
+        s[right] = x
+        seen = {y,z}
+        left = 2
+        seen = {y, z, x}
+
+        right = 5
+        seen = {z,y, x}
+        s[right] = y
+        seen = {y,x}
+        left=3
+        seen = {x}
+        left=4
+        seen = {x,y}
